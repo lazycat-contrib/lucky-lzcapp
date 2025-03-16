@@ -1,0 +1,24 @@
+lzc-sdk-version: "0.1"
+name: Lucky
+package: cloud.lazycat.app.lucky
+version: 2.15.7
+description: 软硬路由公网神器
+homepage: https://lucky666.cn
+author: gdy666
+application:
+  subdomain: lucky
+  background_task: true
+  multi_instance: false
+  gpu_accel: false
+  kvm_accel: false
+  usb_accel: false
+  public_path:
+    - /
+  routes:
+    - /=http://lucky.cloud.lazycat.app.lucky.lzcapp:16601/
+services:
+  lucky:
+    image: docker.hlmirror.com/gdy666/lucky:2.15.7
+    binds:
+      - /lzcapp/var/goodluck:/goodluck
+    network_mode: host

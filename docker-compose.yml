@@ -1,0 +1,10 @@
+    services:
+      lucky:
+        image: docker.hlmirror.com/gdy666/lucky:2.15.7
+        container_name: lucky
+        volumes:
+          - /lzcapp/xxxx:/goodluck
+        ports:
+          - 16601:16601
+        network_mode: host
+        restart: always
