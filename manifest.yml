@@ -1,7 +1,7 @@
 lzc-sdk-version: "0.1"
 name: Lucky
 package: cloud.lazycat.app.lucky
-version: 2.18.5
+version: 2.18.6
 description: 软硬路由公网神器
 homepage: https://lucky666.cn
 author: gdy666
@@ -14,7 +14,7 @@ application:
         - /=http://host.lzcapp:16601/
 services:
     lucky:
-        image: docker.1ms.run/gdy666/lucky:2.18.5
+        image: docker.1ms.run/gdy666/lucky:2.18.6
         binds:
             - /lzcapp/var/goodluck:/goodluck
         network_mode: host
