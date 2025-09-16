@@ -1,6 +1,6 @@
 name: Lucky
 package: cloud.lazycat.app.lucky
-version: 2.19.1
+version: 2.19.4
 min_os_version: 1.3.8
 description: 软硬路由公网神器
 homepage: https://lucky666.cn
@@ -16,7 +16,8 @@ application:
           backend: http://host.lzcapp:16601/
 services:
     lucky:
-        image: docker.1ms.run/gdy666/lucky:2.19.1
+        # gdy666/lucky:2.19.4
+        image: registry.lazycat.cloud/czyt/gdy666/lucky:2fae99899193ace9
         binds:
             - /lzcapp/var/goodluck:/goodluck
         network_mode: host
