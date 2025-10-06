@@ -1,34 +1,34 @@
 name: Lucky
 package: cloud.lazycat.app.lucky
-version: 2.19.4
+version: 2.19.5
 min_os_version: 1.3.8
 description: 软硬路由公网神器
 homepage: https://lucky666.cn
 author: gdy666
 application:
-    subdomain: lucky
-    background_task: true
-    public_path:
-        - /
+  subdomain: lucky
+  background_task: true
+  public_path:
+    - /
 
-    upstreams:
-        - location: /
-          backend: http://host.lzcapp:16601/
+  upstreams:
+    - location: /
+      backend: http://host.lzcapp:16601/
 services:
-    lucky:
-        # gdy666/lucky:2.19.4
-        image: registry.lazycat.cloud/czyt/gdy666/lucky:2fae99899193ace9
-        binds:
-            - /lzcapp/var/goodluck:/goodluck
-        network_mode: host
+  lucky:
+    # gdy666/lucky:2.19.5
+    image: registry.lazycat.cloud/czyt/gdy666/lucky:c449aa52adc8b570
+    binds:
+      - /lzcapp/var/goodluck:/goodluck
+    network_mode: host
 
 locales:
-    zh:
-        name: "Lucky"
-        description: "软硬路由公网神器"
-    zh_CN:
-        name: "Lucky"
-        description: "软硬路由公网神器"
-    en:
-        name: "Lucky"
-        description: "Powerful network kit for self-hosting"
+  zh:
+    name: "Lucky"
+    description: "软硬路由公网神器"
+  zh_CN:
+    name: "Lucky"
+    description: "软硬路由公网神器"
+  en:
+    name: "Lucky"
+    description: "Powerful network kit for self-hosting"
