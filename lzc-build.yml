@@ -1,6 +1,5 @@
 # 整个文件中，可以通过 ${var} 的方式，使用 manifest 字段指定的文件定义的值
 
-
 # manifest: 指定 lpk 包的 manifest.yml 文件路径
 manifest: ./manifest.yml
 
@@ -49,3 +48,9 @@ devshell:
   # - 可以为脚本的路径地址
   # - 如果构建命令简单，也可以直接写 sh 的命令
   # setupscript: export GOPROXY=https://goproxy.cn
+
+compose_override:
+  services:
+    lucky:
+      volumes:
+        - /lzcapp/run/playground/docker.sock:/var/run/docker.sock
