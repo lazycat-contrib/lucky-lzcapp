@@ -53,4 +53,4 @@ compose_override:
   services:
     lucky:
       volumes:
-        - /lzcapp/run/playground/docker.sock:/var/run/docker.sock
+        - /data/playground/docker.sock:/var/run/docker.sock
