@@ -19,7 +19,7 @@ services:
     # gdy666/lucky:2.24.0
     image: registry.lazycat.cloud/czyt/gdy666/lucky:39eb30b5c305a7b6
     binds:
-      - /lzcapp/var/goodluck:/goodluck
+      - /lzcapp/var/goodluck:/app/conf
     network_mode: host
 
 locales:
