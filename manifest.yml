@@ -1,6 +1,6 @@
 name: Lucky
 package: cloud.lazycat.app.lucky
-version: 2.24.0
+version: 2.26.1
 min_os_version: 1.3.8
 description: 软硬路由公网神器
 homepage: https://lucky666.cn
@@ -17,8 +17,8 @@ application:
 services:
   lucky:
     user: root
-    # gdy666/lucky:2.24.0
-    image: registry.lazycat.cloud/czyt/gdy666/lucky:39eb30b5c305a7b6
+    # gdy666/lucky:2.26.1
+    image: registry.lazycat.cloud/czyt/gdy666/lucky:4a2c68a3f8aa1196
     binds:
       - /lzcapp/var/goodluck:/app/conf
     network_mode: host
