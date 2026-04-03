@@ -1,0 +1,15 @@
+package: cloud.lazycat.app.lucky
+version: 2.27.2
+name: Lucky
+description: 软硬路由公网神器
+min_os_version: 1.5.0
+author: gdy666
+homepage: https://lucky666.cn
+
+locales:
+  zh:
+    name: "Lucky"
+    description: "软硬路由公网神器"
+  en:
+    name: "Lucky"
+    description: "Powerful network kit for self-hosting"

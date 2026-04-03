@@ -1,0 +1,16 @@
+application:
+  subdomain: lucky
+  background_task: true
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: http://host.lzcapp:16601/
+
+services:
+  lucky:
+    user: root
+    image: registry.lazycat.cloud/czyt/gdy666/lucky:8ca97c4f7fd48a4e
+    binds:
+      - /lzcapp/var/goodluck:/app/conf
+    network_mode: host
