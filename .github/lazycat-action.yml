@@ -1,0 +1,33 @@
+version: 1
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: dist/lucky.lpk
+update:
+  strategy: publish
+  allow_downgrade: false
+  version_source:
+    type: image
+    image: lucky
+build:
+  run_buildscript: false
+images:
+  - id: lucky
+    target: service
+    service: lucky
+    source: gdy666/lucky
+    channel: stable
+    tag_regex: '^v?[0-9]+\.[0-9]+\.[0-9]+$'
+    delivery:
+      mode: lazycat
+stores:
+  official:
+    enabled: true
+    skip_if_version_exists: true
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: Lucky
+    summary: 适用于软路由和硬路由的公网网络工具套件
+
