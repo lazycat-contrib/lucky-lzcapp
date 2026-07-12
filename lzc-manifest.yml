@@ -6,12 +6,11 @@ application:
   upstreams:
     - location: /
       backend: http://host.lzcapp:16601/
-
 services:
   lucky:
     user: root
-    # upstream: gdy666/lucky:v2.27.2
-    image: registry.lazycat.cloud/czyt/gdy666/lucky:8ca97c4f7fd48a4e
+    # upstream: gdy666/lucky:3.0.0
+    image: registry.lazycat.cloud/czyt/gdy666/lucky:3ed82f2b0ed46e8e
     binds:
       - /lzcapp/var/goodluck:/app/conf
     network_mode: host
