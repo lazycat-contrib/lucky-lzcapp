@@ -9,8 +9,8 @@ application:
 services:
   lucky:
     user: root
-    # upstream: gdy666/lucky:3.0.0
-    image: registry.lazycat.cloud/czyt/gdy666/lucky:3ed82f2b0ed46e8e
+    # upstream: gdy666/lucky:v3.4.0
+    image: registry.lazycat.cloud/czyt/gdy666/lucky:2759e0c6ce0cced0
     binds:
       - /lzcapp/var/goodluck:/app/conf
     network_mode: host
